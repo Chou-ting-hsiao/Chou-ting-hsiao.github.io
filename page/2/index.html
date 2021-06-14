@@ -272,10 +272,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i chromium-chromedriver_65.0.3325.181-0ubuntu0.14.04.1_armhf.deb</span><br></pre></td></tr></table></figure>
 
 <p>預設會放置在</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;usr&#x2F;lib&#x2F;chromium-browser&#x2F;chromedriver</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/lib/chromium-browser/chromedriver</span><br></pre></td></tr></table></figure>
 
 <p>接下來更改protractor.conf.js的設定，加入下方設定</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chromeDriver: &#39;&#x2F;usr&#x2F;lib&#x2F;chromium-browser&#x2F;chromedriver&#39;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chromeDriver: &#x27;/usr/lib/chromium-browser/chromedriver&#x27;</span><br></pre></td></tr></table></figure>
 
 <p>運行Protractor時使用–no-webdriver-update選項</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ng e2e --no-webdriver-update</span><br></pre></td></tr></table></figure>
